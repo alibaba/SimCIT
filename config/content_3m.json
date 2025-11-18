@@ -1,0 +1,22 @@
+{
+    "data_sources": ["text_emb", "image_emb", "cf_emb"],
+    "codebook": {
+        "codebook_size": 128,
+        "n_codebooks": 2,
+        "kmeans_init": false
+    },
+    "encoder": {
+        "input_dim": {
+          "text_emb": 512,
+          "image_emb": 1024,
+          "cf_emb": 32
+      },
+      "dnn_layers": [512, 384, 256],
+      "embedding_dim": 128
+    },
+    "temperature": 0.07,
+    "projection": {
+      "projection_layer": "linear",
+      "projection_dim": 128
+    }
+  }

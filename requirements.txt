@@ -1,0 +1,4 @@
+torch==2.2.0
+numpy==1.26.4
+einops==0.8.1
+gin-config==0.5.0
