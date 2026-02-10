@@ -25,7 +25,7 @@
 <!-- PROJECT LOGO -->
 
 
-<h3 align="center">SimCIT</h3>
+<h3 align="center">Gwhere</h3>
 
   <p align="center">
      Guess Where You Go: Generative Next Point-of-Interest Recommendation in Amap
