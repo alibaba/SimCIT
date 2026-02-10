@@ -28,8 +28,7 @@
 <h3 align="center">SimCIT</h3>
 
   <p align="center">
-     A Simple Contrastive Framework Of Item
-Tokenization For Generative Recommendation
+     Guess Where You Go: Generative Next Point-of-Interest Recommendation in Amap
     <a href="https://github.com/alibaba/SimCIT">View Demo</a>
     &middot;
     <a href="https://github.com/alibaba/SimCIT/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
@@ -73,7 +72,7 @@ Tokenization For Generative Recommendation
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/alibaba/SimCIT)
 
-Generative retrieval has emerged as a promising paradigm aiming at directly generating the identifiers of target candidates. However, in large-scale retrieval systems, this approach becomes increasingly cumbersome due to the redundancy and sheer scale of the token space. Existing solutions often rely on reconstruction-based quantization strategies, such as RQ-VAE, to reduce embedding size. While effective for independent item embedding reconstruction, this conflicts with the core objective of generative retrieval tasks, which demand robust differentiation among items. Furthermore, the effective integration of multi-modal side information—including descriptive text, images, and geographical knowledge—into existing generative retrieval frameworks remains a significant challenge. To address these limitations and specifically enhance the scalability of generative retrieval, we propose SimCIT, a Simple Contrastive learning framework of Item Tokenization. Specifically, different from existing reconstruction-based strategies, SimCIT propose to use a learnable residual quantization module to align with the signals from different modalities of the items, which combines multi-modal knowledge alignment and semantic tokenization in a mutually beneficial contrastive learning framework. Extensive experiments across public datasets from various domains and a large-scale location-based industrial dataset of AMAP1 App demonstrate SimCIT’s effectiveness and scalability in LLM-based generative retrieval tasks.
+Gwhere is an end-to-end generative recommendation framework for next point-of-interest (POI) prediction, designed to overcome the scalability limits of token-based retrieval and the lack of spatial-world understanding in LLMs. It introduces a contrastive item tokenization method that fuses multi-modal signals (text, image, spatial, and collaborative data) into compact, discriminative semantic identifiers (SIDs), enabling efficient large-scale generative retrieval. Built on these SIDs, a spatio-temporal LLM—pretrained on real-world mobility corpora and fine-tuned with a reinforcement learning algorithm (EAKTO)—aligns closely with user behavior.
 
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
@@ -172,15 +171,14 @@ If you have any questions or encounter difficulties, we welcome you to contact o
 Please cite the following paper if you find our code helpful.
 
 ```
-@misc{zhai2025simple,
-      title={A Simple Contrastive Framework Of Item
-      Tokenization For Generative Recommendation}, 
-      author={Zhai, Penglong and Yuan, Yifang and Di, Fanyi and Li, Jie and Liu, Yue and Li, Chen and Huang, Jie and Wang, Sicong and Xu, Yao and Li, Xin},
+@misc{zhai2025cognitivealignedspatiotemporallargelanguage,
+      title={Cognitive-Aligned Spatio-Temporal Large Language Models For Next Point-of-Interest Prediction}, 
+      author={Penglong Zhai and Jie Li and Fanyi Di and Yue Liu and Yifang Yuan and Jie Huang and Peng Wu and Sicong Wang and Mingyang Yin and Tingting Hu and Yao Xu and Xin Li},
       year={2025},
-      eprint={2506.16683},
+      eprint={2510.14702},
       archivePrefix={arXiv},
-      primaryClass={cs.IR},
-      url={https://arxiv.org/abs/2506.16683}, 
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2510.14702}, 
 }
 ```
 
@@ -200,7 +198,7 @@ Please cite the following paper if you find our code helpful.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: asset/SimCIT.png
+[product-screenshot]: asset/framework_gwhere.jpg
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React-url]: https://reactjs.org/
